@@ -57,7 +57,7 @@ end
 
 function Local.SpawnCompanion(player: Player)
 	if not player:IsA("Player") then
-		warn("[CompanionService] SpawnCompanion: invalid player passed:", player)
+		warn("[CompanionService] Invalid Player: ", player)
 		return
 	end
 
@@ -187,7 +187,7 @@ end
 
 function Shared.AddCompanion(player: Player)
 	if not player then
-		warn("[CompanionService] AddCompanion called with NIL player")
+		warn("[CompanionService] Player not found.")
 		return
 	end
 
